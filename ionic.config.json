@@ -1,0 +1,7 @@
+{
+  "name": "villadotamos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

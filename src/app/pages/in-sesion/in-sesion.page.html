@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>inSesion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">inSesion</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+ <ion-card>
+  <ion-card-header>
+    <ion-card-title>
+      Iniciar Sesion
+    </ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-item>
+      <ion-icon name="person-outline" slot="start"></ion-icon>
+      <ion-input [(ngModel)]="email" type="email" placeholder="Correo"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+      <ion-input [(ngModel)]="password" type="password" placeholder="Contraseña"></ion-input>
+    </ion-item>
+  
+    <ion-button fill="clear" shape="round" class="ion-margin-top" (click)="login()">Ingresar</ion-button>
+  </ion-card-content>
+ </ion-card>
+
+ <ion-text style="display: block; text-align: center;" class="ion-margin-top">
+  No tienes una cuenta? <strong (click)="register()">Registrarse</strong>
+</ion-text>
+
+  
+</ion-content>
